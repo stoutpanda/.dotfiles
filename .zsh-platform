@@ -1,0 +1,35 @@
+#/bin/zsh
+#config file to add to my .zshrc(Ohmyzsh) I have made to detect the platform and set a few specific options.
+#detect if linux, freebsd or other. If linux find out what distro, then set options.
+
+
+
+if [[ $(uname) = 'FreeBSD' ]]; then
+  echo "FreeBSD is the way to be." 
+  fi
+if [[ $(uname) = 'Linux' ]]; then
+  echo "Linux"
+  DISTRO=$(awk '/ID=/ { printf $0 }' /etc/*release* | cut -c4- )
+  echo $DISTRO
+       if [[ $DISTRO = 'arch' ]]; then
+          echo "Arch sweet Arch."
+          #remapping control key for emacs
+          /usr/bin/setxkbmap -option 'ctrl:nocaps'
+          /usr/bin/setxkbmap -option "shift:both_capslock"
+          exit
+
+      elif [[ $DISTRO = 'gentoo' ]]; then
+          echo "Gentoo is here." 
+          exit
+    
+
+       elif [[ $DISTRO  = 'ubuntu' ]]; then
+          echo 'Why did you install Ubuntu again?'
+          exit
+
+       else
+         echo "'You need to make a case for this Distro: '$DISTRO"
+         exit
+       fi 
+fi
+  
