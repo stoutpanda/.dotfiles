@@ -9,7 +9,7 @@ if [[ $(uname) = 'FreeBSD' ]]; then
   fi
 if [[ $(uname) = 'Linux' ]]; then
   echo "Linux"
-  DISTRO=$(awk '/ID=/ { printf $0 }' /etc/*release* | cut -c4- )
+  DISTRO=$(awk '/^ID=/ { printf $0 }' /etc/*release* | cut -c4- )
   echo $DISTRO
        if [[ $DISTRO = 'arch' ]]; then
           echo "Arch sweet Arch."
