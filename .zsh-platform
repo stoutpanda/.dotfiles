@@ -16,7 +16,8 @@ if [[ $(uname) = 'Linux' ]]; then
           #remapping control key for emacs
           /usr/bin/setxkbmap -option 'ctrl:nocaps'
           /usr/bin/setxkbmap -option "shift:both_capslock"
-
+          #Set RVM path - For now per user. 
+          [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
       elif [[ $DISTRO = 'gentoo' ]]; then
           echo "Gentoo is here." 
     
