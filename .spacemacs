@@ -206,9 +206,8 @@ values."
    ))
 
 (defun dotspacemacs/user-init ()
-  "Initialization function for user code.
-It is called immediately after `dotspacemacs/init'.  You are free to put any
-user code."
+   (setq-default ruby-version-manager 'rvm)
+
   )
 
 (defun dotspacemacs/user-config ()
