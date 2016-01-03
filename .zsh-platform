@@ -13,9 +13,6 @@ if [[ $(uname) = 'Linux' ]]; then
   echo $DISTRO
        if [[ $DISTRO = 'arch' ]]; then
           echo "Arch sweet Arch."
-          #remapping control key for emacs
-          /usr/bin/setxkbmap -option 'ctrl:nocaps'
-          /usr/bin/setxkbmap -option "shift:both_capslock"
           #Set RVM path - For now per user. 
           [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
       elif [[ $DISTRO = 'gentoo' ]]; then
