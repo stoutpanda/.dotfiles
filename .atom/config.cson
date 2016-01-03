@@ -1,0 +1,12 @@
+"*":
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "seti-ui"
+      "monokai-slate"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 13
+  minimap: {}
