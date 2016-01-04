@@ -6,6 +6,8 @@
       "seti-ui"
       "monokai-slate"
     ]
+    projectHome: "/home/jason/Projects"
+    openEmptyEditorOnStart: false
   editor:
     invisibles: {}
     fontSize: 13

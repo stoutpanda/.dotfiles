@@ -5,7 +5,7 @@
 
 
 if [[ $(uname) = 'FreeBSD' ]]; then
-  echo "FreeBSD is the way to be." 
+  echo "FreeBSD is the way to be."
   fi
 if [[ $(uname) = 'Linux' ]]; then
   echo "Linux"
@@ -13,17 +13,16 @@ if [[ $(uname) = 'Linux' ]]; then
   echo $DISTRO
        if [[ $DISTRO = 'arch' ]]; then
           echo "Arch sweet Arch."
-          #Set RVM path - For now per user. 
+          #Set RVM path - For now per user.
           [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
       elif [[ $DISTRO = 'gentoo' ]]; then
-          echo "Gentoo is here." 
-    
+          echo "Gentoo is here."
+
 
        elif [[ $DISTRO  = 'ubuntu' ]]; then
           echo 'Why did you install Ubuntu again?'
 
        else
          echo "'You need to make a case for this Distro: '$DISTRO"
-       fi 
+       fi
 fi
-  

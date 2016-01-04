@@ -1,7 +1,7 @@
 {
   "name": "atom-runner",
   "main": "./lib/atom-runner",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "Runs scripts inside of Atom.",
   "repository": {
     "type": "git",
@@ -27,10 +27,10 @@
     "url": "https://github.com/lsegal/atom-runner/issues"
   },
   "homepage": "https://github.com/lsegal/atom-runner#readme",
-  "_id": "atom-runner@2.5.1",
-  "_shasum": "db53b8ec749ed6e19b0a5e7fe0bc399b1b759e57",
-  "_resolved": "file:../d-1151131-22101-1xadsgc/package.tgz",
-  "_from": "../d-1151131-22101-1xadsgc/package.tgz",
+  "_id": "atom-runner@2.5.2",
+  "_shasum": "60bc575c1e92538f1b630238ea216bcfcc9ac77e",
+  "_resolved": "file:../d-11603-21040-zeuaku/package.tgz",
+  "_from": "../d-11603-21040-zeuaku/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
