@@ -8,7 +8,14 @@
     ]
     projectHome: "/home/jason/Projects"
     openEmptyEditorOnStart: false
+    disabledPackages: [
+      "atom-runner"
+    ]
   editor:
     invisibles: {}
     fontSize: 13
   minimap: {}
+  "terminal-plus":
+    core: {}
+    style: {}
+  pigments: {}

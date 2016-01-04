@@ -15,7 +15,7 @@ if [[ $(uname) = 'Linux' ]]; then
           echo "Arch sweet Arch."
           #Set RVM path - For now per user.
           [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-      elif [[ $DISTRO = 'gentoo' ]]; then
+          elif [[ $DISTRO = 'gentoo' ]]; then
           echo "Gentoo is here."
 
 

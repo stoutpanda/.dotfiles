@@ -29,8 +29,8 @@
   "homepage": "https://github.com/lsegal/atom-runner#readme",
   "_id": "atom-runner@2.5.2",
   "_shasum": "60bc575c1e92538f1b630238ea216bcfcc9ac77e",
-  "_resolved": "file:../d-11603-21040-zeuaku/package.tgz",
-  "_from": "../d-11603-21040-zeuaku/package.tgz",
+  "_resolved": "file:../d-11603-28015-bytmm3/package.tgz",
+  "_from": "../d-11603-28015-bytmm3/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
