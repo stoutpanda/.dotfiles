@@ -17,5 +17,4 @@ source $ZSH/oh-my-zsh.sh
 source .zsh-platform
 
 #for atom
-export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$PATH:$HOME/.rvm/rubies/default/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

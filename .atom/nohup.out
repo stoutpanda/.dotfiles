@@ -26,11 +26,4 @@ Error: auto-updater is not implemented on this platform
     at EventEmitter.<anonymous> (/usr/share/atom/resources/app.asar/src/browser/main.js:55:23)
     at emitOne (events.js:82:20)
     at EventEmitter.emit (events.js:169:7)
-App load time: 323ms
-Cannot read property 'length' of undefined
-TypeError: Cannot read property 'length' of undefined
-    at AtomApplication.<anonymous> (/usr/share/atom/resources/app.asar/src/browser/atom-application.js:608:40)
-    at AtomApplication.module.exports.AtomApplication.openPaths (/usr/share/atom/resources/app.asar/src/browser/atom-application.js:613:10)
-    at /usr/share/atom/resources/app.asar/src/browser/atom-application.js:925:24
-    at Function.wrappedCallback (/usr/share/atom/resources/atom.asar/browser/api/lib/dialog.js:82:16)
-Created new window in existing browser session.
+App load time: 419ms

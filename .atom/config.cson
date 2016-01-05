@@ -8,9 +8,6 @@
     ]
     projectHome: "/home/jason/Projects"
     openEmptyEditorOnStart: false
-    disabledPackages: [
-      "atom-runner"
-    ]
   editor:
     invisibles: {}
     fontSize: 13
