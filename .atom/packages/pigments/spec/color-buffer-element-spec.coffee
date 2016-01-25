@@ -144,15 +144,18 @@ describe 'ColorBufferElement', ->
 
           describe 'and the markers are updated', ->
             beforeEach ->
-              waitsForPromise -> colorBuffer.variablesAvailable()
-              sleep(100)
+              waitsForPromise 'colors available', ->
+                colorBuffer.variablesAvailable()
+              waitsFor 'last marker visible', ->
+                markers = colorBufferElement.shadowRoot.querySelectorAll('pigments-color-marker')
+                isVisible(markers[3])
 
             it 'hides the created markers', ->
               markers = colorBufferElement.shadowRoot.querySelectorAll('pigments-color-marker')
               expect(isVisible(markers[0])).toBeFalsy()
               expect(isVisible(markers[1])).toBeTruthy()
               expect(isVisible(markers[2])).toBeTruthy()
-              expect(isVisible(markers[3])).toBeFalsy()
+              expect(isVisible(markers[3])).toBeTruthy()
 
       describe 'when a line is edited and gets wrapped', ->
         marker = null

@@ -1,3 +1,45 @@
+<a name="v0.21.0"></a>
+# v0.21.0 (2016-01-25)
+
+## Features
+
+- Add a new setting to completely ignore some editor when rendering colors ([c6b4f867](https://github.com/abe33/atom-pigments/commit/c6b4f867a2f2f954c8c453ced90cd9611d6aa59c), [#132](https://github.com/abe33/atom-pigments/issues/132))
+- Implement support for color-picker API ([0aed4216](https://github.com/abe33/atom-pigments/commit/0aed42164b37bbd19ad9d11319d37e5fa3af2a88), [#16](https://github.com/abe33/atom-pigments/issues/16))
+- Add a Color::isLiteral method to know when a color relies on variables or not ([273f9b29](https://github.com/abe33/atom-pigments/commit/273f9b298726174852d88be8cf0180a0b1d4222e))
+
+## Bug Fixes
+
+- Prevent highlighting colors when there's a space between the color and a punctuation ([5aed636e](https://github.com/abe33/atom-pigments/commit/5aed636edfe11ec4afa1ab27dca8936b576fa65e))
+- Fix name prefixes not matching words with a tab before ([114b772b](https://github.com/abe33/atom-pigments/commit/114b772bf26b5217ff66cca1b42978fbca3a0fba))
+- Fix invalid consumedServices definition ([018c3172](https://github.com/abe33/atom-pigments/commit/018c3172379c3cc0d6bc3fb1345718ba0f36124f))
+
+<a name="v0.20.0"></a>
+# v0.20.0 (2016-01-20)
+
+## Features
+
+- Add a pigments:report command ([8c29bd7e](https://github.com/abe33/atom-pigments/commit/8c29bd7e3a9f2f0e1bf12db6f5466fb63eb831a0))  <br>It dumps a bunch of pigments related data into a text editor for easy
+  copy paste.
+  Paths from the project directories are redacted to avoid leaking
+  username.
+- Implement support for marker layers when available ([62f0c5fd](https://github.com/abe33/atom-pigments/commit/62f0c5fdce462f4b5807d89689b15479dd6176d2))
+
+<a name="v0.19.7"></a>
+# v0.19.7 (2016-01-18)
+
+## Bug Fixes
+
+- Prevent rendering of marker without color ([6e7947a1](https://github.com/abe33/atom-pigments/commit/6e7947a1c833dbc7b11f7c1027a52f3d4b3c0cb8), [#108](https://github.com/abe33/atom-pigments/issues/108))
+- Fix filtering on marker with no colors ([14d15534](https://github.com/abe33/atom-pigments/commit/14d1553446d47a30116ba725ac990ccfec38431f), [#129](https://github.com/abe33/atom-pigments/issues/129))
+
+<a name="v0.19.6"></a>
+# v0.19.6 (2016-01-11)
+
+## Bug Fixes
+
+- Fix gutter colors displayed even when ignored ([a858edb4](https://github.com/abe33/atom-pigments/commit/a858edb4b506ae3a1b4fd0ccb5bed3e16516bfcb), [#127](https://github.com/abe33/atom-pigments/issues/127))
+- Fix infinite loops in split utility ([4f52ba92](https://github.com/abe33/atom-pigments/commit/4f52ba925ec5ef67d1cbf999cdecbec5a5ee76aa))
+
 <a name="v0.19.5"></a>
 # v0.19.5 (2015-12-23)
 
