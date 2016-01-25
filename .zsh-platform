@@ -1,6 +1,4 @@
 #/bin/zsh
-#config file to add to my .zshrc(Ohmyzsh) I have made to detect the platform and set a few specific options.
-#detect if linux, freebsd or other. If linux find out what distro, then set options.
 
 
 
