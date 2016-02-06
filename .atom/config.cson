@@ -8,6 +8,9 @@
     ]
     projectHome: "/home/jason/Projects"
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "language-ruby-on-rails"
+    ]
   editor:
     invisibles: {}
     fontSize: 13
@@ -17,3 +20,9 @@
     style: {}
   pigments: {}
   "git-plus": {}
+  linter: {}
+  rspec:
+    command: "bundle exec rspec"
+  "ruby-test":
+    specFramework: "rspec"
+    shell: "/bin/zsh"
