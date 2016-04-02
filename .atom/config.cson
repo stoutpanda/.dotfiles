@@ -11,9 +11,9 @@
     packagesWithKeymapsDisabled: [
       "language-ruby-on-rails"
     ]
+    autoHideMenuBar: true
   editor:
     invisibles: {}
-    fontSize: 13
   minimap: {}
   "terminal-plus":
     core: {}
@@ -26,3 +26,4 @@
   "ruby-test":
     specFramework: "rspec"
     shell: "/bin/zsh"
+  "spell-check": {}

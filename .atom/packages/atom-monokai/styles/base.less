@@ -1,13 +1,10 @@
-@import "ui-variables";
-@import "colors";
-@import "mixin";
-@import "keyframes";
-@import "markdown";
-
 .atom-text-editor, :host {
 
-  .base-background (@base);
-  .base-text-color (@base);
+  @syntax-fg: @text-color;
+  @syntax-bg: darken(@base-background-color, 4%);
+
+  color: @syntax-fg;
+  background: @syntax-bg;
 
   .invisible-character,
   .indent-guide {
