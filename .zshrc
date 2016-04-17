@@ -8,7 +8,7 @@ CASE_SENSITIVE="true"
 #Waiting Dots
 COMPLETION_WAITING_DOTS="true"
 # plugins
-plugins=(git ruby rvm)
+plugins=(git ruby rvm bundler rails)
 
 
 # User configuration
