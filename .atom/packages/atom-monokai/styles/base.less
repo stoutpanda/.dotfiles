@@ -1,9 +1,8 @@
 .atom-text-editor, :host {
 
-  @syntax-fg: @text-color;
   @syntax-bg: darken(@base-background-color, 4%);
 
-  color: @syntax-fg;
+  color: @text-color;
   background: @syntax-bg;
 
   .invisible-character,
@@ -72,6 +71,10 @@
 
 .support.function.any-method, .support.function.C99 {
   color: @functionCall;
+}
+
+.support.type.exception {
+  color: @variable;
 }
 
 .constant {

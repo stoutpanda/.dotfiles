@@ -1,29 +1,29 @@
 "*":
-  welcome:
-    showOnStartup: false
   core:
-    themes: [
-      "seti-ui"
-      "monokai-slate"
-    ]
-    projectHome: "/home/jason/Projects"
+    autoHideMenuBar: true
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "language-ruby-on-rails"
     ]
-    autoHideMenuBar: true
+    projectHome: "/home/jason/Projects"
+    themes: [
+      "seti-ui"
+      "monokai-slate"
+    ]
   editor:
     invisibles: {}
-  minimap: {}
-  "terminal-plus":
-    core: {}
-    style: {}
-  pigments: {}
   "git-plus": {}
   linter: {}
+  minimap: {}
+  pigments: {}
   rspec:
     command: "bundle exec rspec"
   "ruby-test":
-    specFramework: "rspec"
     shell: "/bin/zsh"
+    specFramework: "rspec"
   "spell-check": {}
+  "terminal-plus":
+    core: {}
+    style: {}
+  welcome:
+    showOnStartup: false

@@ -10,11 +10,17 @@ AtomRunnerView = require './atom-runner-view'
 class AtomRunner
   config:
     showOutputWindow:
-      title: 'Show Output Window'
-      description: 'Displays the output window when running commands. Uncheck to hide output.'
+      title: 'Show Output Pane'
+      description: 'Displays the output pane when running commands. Uncheck to hide output.'
       type: 'boolean'
       default: true
       order: 1
+    paneSplitDirection:
+      title: 'Pane Split Direction'
+      description: 'The direction to split when opening the output pane.'
+      type: 'string'
+      default: 'Right'
+      enum: ['Right', 'Down', 'Up', 'Left']
 
   cfg:
     ext: 'runner.extensions'
@@ -22,7 +28,7 @@ class AtomRunner
 
   defaultExtensionMap:
     'spec.coffee': 'mocha'
-    'ps1': 'c:\\windows\\sysnative\\windowspowershell\\v1.0\\powershell.exe -file'
+    'ps1': 'powershell -file'
     '_test.go': 'go test'
 
   defaultScopeMap:
@@ -32,10 +38,17 @@ class AtomRunner
     python: 'python'
     go: 'go run'
     shell: 'bash'
-    powershell: 'c:\\windows\\sysnative\\windowspowershell\\v1.0\\powershell.exe -noninteractive -noprofile -c -'
+    powershell: 'powershell -noninteractive -noprofile -c -'
 
+  timer: null
   extensionMap: null
   scopeMap: null
+  splitFuncDefault: 'splitRight'
+  splitFuncs:
+    Right: 'splitRight'
+    Left: 'splitLeft'
+    Up: 'splitUp'
+    Down: 'splitDown'
 
   debug: (args...) ->
     console.debug('[atom-runner]', args...)
@@ -88,7 +101,9 @@ class AtomRunner
       if not view?
         view = new AtomRunnerView(editor.getTitle())
         panes = atom.workspace.getPanes()
-        pane = panes[panes.length - 1].splitRight(view)
+        dir = atom.config.get('atom-runner.paneSplitDirection')
+        dirfunc = @splitFuncs[dir] || @splitFuncDefault
+        pane = panes[panes.length - 1][dirfunc](view)
     else
       view =
         mocked: true
@@ -117,6 +132,8 @@ class AtomRunner
       @child.kill('SIGINT')
       if @child.killed
         @child = null
+    clearInterval(@timer) if @timer
+    @timer = null
 
   stopAndClose: ->
     {pane, view} = @runnerView()
@@ -143,6 +160,7 @@ class AtomRunner
       catch
         dir = p.dirname(dir)
       @child = spawn(cmd, args, cwd: dir)
+      @timer = setInterval((=> view.appendFooter('.')), 750)
       currentPid = @child.pid
       @child.on 'error', (err) =>
         if err.message.match(/\bENOENT$/)
@@ -152,6 +170,7 @@ class AtomRunner
         view.append(err.stack, 'stderr')
         view.scrollToBottom()
         @child = null
+        clearInterval(@timer) if @timer
       @child.stderr.on 'data', (data) =>
         view.append(data, 'stderr')
         view.scrollToBottom()
@@ -161,20 +180,22 @@ class AtomRunner
       @child.on 'close', (code, signal) =>
         if @child && @child.pid == currentPid
           time = ((new Date - startTime) / 1000)
-          view.footer("Exited with code=#{code} in #{time} seconds")
+          view.appendFooter(" Exited with code=#{code} in #{time} seconds.")
           view.scrollToBottom()
+          clearInterval(@timer) if @timer
     catch err
       view.append(err.stack, 'stderr')
       view.scrollToBottom()
       @stop()
 
     startTime = new Date
-    if selection
-      @child.stdin.write(editor.getLastSelection().getText())
-    else if !editor.getPath()
-      @child.stdin.write(editor.getText())
-    @child.stdin.end()
-    view.footer("Running: #{cmd} #{editor.getPath()} (pid #{@child.pid})")
+    try
+      if selection
+        @child.stdin.write(editor.getLastSelection().getText())
+      else if !editor.getPath()
+        @child.stdin.write(editor.getText())
+      @child.stdin.end()
+    view.footer("Running: #{cmd} (cwd=#{editor.getPath()} pid=#{@child.pid}).")
 
   commandFor: (editor, selection) ->
     # try to find a shebang
