@@ -2,91 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-116811-27666-1xkjezn/package.tgz",
+        "raw": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-116811-27666-1xkjezn/package.tgz",
-        "spec": "/tmp/d-116811-27666-1xkjezn/package.tgz",
+        "rawSpec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
+        "spec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-116811-27666-ax55iu"
+      "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/apm-install-dir-11699-40617-eorwhh"
     ]
   ],
-  "_from": "../d-116811-27666-1xkjezn/package.tgz",
-  "_id": "git-plus@5.17.0",
+  "_from": "../d-11699-40617-jcauf/package.tgz",
+  "_id": "git-plus@5.18.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/git-plus",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-116811-27666-1xkjezn/package.tgz",
+    "raw": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-116811-27666-1xkjezn/package.tgz",
-    "spec": "/tmp/d-116811-27666-1xkjezn/package.tgz",
+    "rawSpec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
+    "spec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-116811-27666-1xkjezn/package.tgz",
-  "_shasum": "38df3fb4754784969810be2ca3422c7058666056",
+  "_resolved": "file:../d-11699-40617-jcauf/package.tgz",
+  "_shasum": "d2616aa7bec56ff7590fef5ad469b567d723b3d6",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-116811-27666-1xkjezn/package.tgz",
-  "_where": "/tmp/apm-install-dir-116811-27666-ax55iu",
-  "activationCommands": {
-    "atom-workspace": [
-      "git-plus:menu",
-      "git-plus:add",
-      "git-plus:add-all",
-      "git-plus:add-all-and-commit",
-      "git-plus:add-all-commit-and-push",
-      "git-plus:add-and-commit",
-      "git-plus:add-and-commit-and-push",
-      "git-plus:delete-local-branch",
-      "git-plus:delete-remote-branch",
-      "git-plus:diff-all",
-      "git-plus:diff",
-      "git-plus:difftool",
-      "git-plus:log",
-      "git-plus:log-current-file",
-      "git-plus:status",
-      "git-plus:push",
-      "git-plus:pull",
-      "git-plus:pull-using-rebase",
-      "git-plus:remove",
-      "git-plus:remove-current-file",
-      "git-plus:checkout",
-      "git-plus:checkout-remote",
-      "git-plus:checkout-current-file",
-      "git-plus:checkout-all-files",
-      "git-plus:cherry-pick",
-      "git-plus:commit",
-      "git-plus:commit-all",
-      "git-plus:commit-amend",
-      "git-plus:fetch",
-      "git-plus:new-branch",
-      "git-plus:reset-head",
-      "git-plus:show",
-      "git-plus:stage-files",
-      "git-plus:stage-hunk",
-      "git-plus:stash-save",
-      "git-plus:stash-save-message",
-      "git-plus:stash-pop",
-      "git-plus:stash-keep",
-      "git-plus:stash-drop",
-      "git-plus:tags",
-      "git-plus:unstage-files",
-      "git-plus:init",
-      "git-plus:run",
-      "git-plus:merge",
-      "git-plus:merge-remote",
-      "git-plus:rebase",
-      "git-plus:open-changed-files"
-    ]
-  },
+  "_spec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40617-jcauf/package.tgz",
+  "_where": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/apm-install-dir-11699-40617-eorwhh",
   "bugs": {
     "url": "https://github.com/akonwi/git-plus/issues"
   },
@@ -125,5 +74,5 @@
     "type": "git",
     "url": "git+https://github.com/akonwi/git-plus.git"
   },
-  "version": "5.17.0"
+  "version": "5.18.0"
 }

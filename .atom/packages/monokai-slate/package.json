@@ -1,37 +1,63 @@
 {
-  "name": "monokai-slate",
-  "theme": "syntax",
-  "version": "0.5.0",
-  "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hamxiaoz/monokai-slate.git"
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+        "spec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/apm-install-dir-11699-40707-9fzryv"
+    ]
+  ],
+  "_from": "../d-11699-40707-141tw4c/package.tgz",
+  "_id": "monokai-slate@0.6.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/monokai-slate",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+    "spec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+    "type": "local"
   },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11699-40707-141tw4c/package.tgz",
+  "_shasum": "8e73aba898f852cea44a5ea6d38096bbdc428c1d",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/d-11699-40707-141tw4c/package.tgz",
+  "_where": "/private/var/folders/lg/fw6gjgxj7ng_j2hr6tvkmf3h0000gn/T/apm-install-dir-11699-40707-9fzryv",
+  "bugs": {
+    "url": "https://github.com/hamxiaoz/monokai-slate/issues"
+  },
+  "dependencies": {},
+  "description": "A Monokai syntax theme variant with some subtle, relaxing tweaks",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/hamxiaoz/monokai-slate",
   "keywords": [
     "monokai"
   ],
   "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
-  },
-  "bugs": {
-    "url": "https://github.com/hamxiaoz/monokai-slate/issues"
-  },
-  "homepage": "https://github.com/hamxiaoz/monokai-slate",
+  "name": "monokai-slate",
+  "optionalDependencies": {},
   "readme": "**NOTE this is based on the monokai-shade theme with some color/font tweaks**\n\n```\n# monokai-shade theme\n\nA Monokai syntax theme variant with some subtle, relaxing tweaks\n\nBased on the original Atom Monokai theme - https://github.com/kevinsawicki/monokai\n\n### Tweaks\n- increased line-height\n- changed default font\n- subtle, low-contrast invisible characters\n- toned down wrap-guide\n- changed bg color to match Monokai from Sublime\n- more padding in line number gutter\n- brighter highlighting\n```\n\n![](https://raw.githubusercontent.com/hamxiaoz/monokai-slate/master/preview/coffee.png)\n![](https://raw.githubusercontent.com/hamxiaoz/monokai-slate/master/preview/md.png)\n",
   "readmeFilename": "README.md",
-  "_id": "monokai-slate@0.5.0",
-  "_shasum": "f3e7053d70de7a58a8411b95a27c5ee40022dea6",
-  "_resolved": "file:../d-1151131-21718-18rv7x6/package.tgz",
-  "_from": "../d-1151131-21718-18rv7x6/package.tgz",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamxiaoz/monokai-slate.git"
+  },
+  "theme": "syntax",
+  "version": "0.6.0"
 }

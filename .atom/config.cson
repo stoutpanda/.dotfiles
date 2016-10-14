@@ -1,4 +1,7 @@
 "*":
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/local/bin/"
   core:
     autoHideMenuBar: true
     openEmptyEditorOnStart: false
@@ -12,6 +15,8 @@
     ]
   editor:
     invisibles: {}
+  "exception-reporting":
+    userId: "94838d8e-134d-c69d-94d2-31c7b149dcd6"
   "git-plus": {}
   linter: {}
   minimap: {}
