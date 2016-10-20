@@ -9,6 +9,7 @@
       "language-ruby-on-rails"
     ]
     projectHome: "/home/jason/Projects"
+    telemetryConsent: "limited"
     themes: [
       "seti-ui"
       "monokai-slate"
@@ -20,6 +21,8 @@
   "git-plus": {}
   linter: {}
   minimap: {}
+  "package-sync":
+    createOnChange: true
   pigments: {}
   rspec:
     command: "bundle exec rspec"
