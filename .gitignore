@@ -1,8 +1,3 @@
-storage
-compile-cache
-dev
-.npm
-.node-gyp
 # Atom sync
 /.atom/blob-store/
 /.atom/compile-cache/
