@@ -14,9 +14,6 @@ packages: [
   "monokai-slate"
   "package-sync"
   "pigments"
-  "ruby-test"
-  "script-runner"
   "seti-syntax"
   "seti-ui"
-  "terminal-plus"
 ]

@@ -1,7 +1,10 @@
 "*":
-  "autocomplete-elixir":
-    elixirPath: "/usr/local/bin/elixir"
-    erlangHome: "/usr/local/bin/"
+  "autocomplete-elixir": {}
+  "autocomplete-plus":
+    fileBlacklist: [
+      "*.txt"
+      "*.csv"
+    ]
   core:
     autoHideMenuBar: true
     openEmptyEditorOnStart: false
