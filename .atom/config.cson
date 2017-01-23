@@ -5,6 +5,11 @@
       "*.txt"
       "*.csv"
     ]
+  "autocomplete-ruby":
+    rsensePath: '''
+      ~/.rvm/gems/ruby-2.3.0/bin/rsense
+      
+    '''
   core:
     autoHideMenuBar: true
     openEmptyEditorOnStart: false
@@ -18,10 +23,13 @@
       "monokai-slate"
     ]
   editor:
+    fontSize: 15
     invisibles: {}
   "exception-reporting":
     userId: "94838d8e-134d-c69d-94d2-31c7b149dcd6"
-  "git-plus": {}
+  "git-plus":
+    general:
+      _analyticsUserId: "72c1114d-b2a7-4afe-b595-26e96184bd57"
   linter: {}
   minimap: {}
   "package-sync":
@@ -34,7 +42,9 @@
     specFramework: "rspec"
   "spell-check": {}
   "terminal-plus":
-    core: {}
-    style: {}
+    core:
+      mapTerminalsTo: "Folder"
+    style:
+      theme: "homebrew"
   welcome:
     showOnStartup: false
