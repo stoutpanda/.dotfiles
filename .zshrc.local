@@ -1,0 +1,4 @@
+#zshrc local to use with grml
+export EDITOR='vim'
+export VISUAL='vim'
+
